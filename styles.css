@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#results, #chartContainer, #deckContainer, #logging {
+    margin-top: 20px;
+}
+
+#deckContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    #deckContainer {
+        flex-direction: column;
+    }
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode table {
+    background-color: #444;
+}
+
+.dark-mode .card {
+    background-color: #666;
+    color: #fff;
+}
